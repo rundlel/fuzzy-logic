@@ -1,5 +1,5 @@
 [System]
-Name='Fuzzy 2'
+Name='Fuzzy 2.5'
 Type='mamdani'
 Version=2.0
 NumInputs=4
@@ -15,24 +15,24 @@ DefuzzMethod='centroid'
 Name='FDI'
 Range=[0 1]
 NumMFs=3
-MF1='Low':'trimf',[-0.4 0 0.4]
-MF2='Medium':'trimf',[0.1 0.5 0.9]
+MF1='Low':'trimf',[-0.4 0 0.3]
+MF2='Medium':'trimf',[0.2 0.45 0.7]
 MF3='High':'trimf',[0.6 1 1.4]
 
 [Input2]
 Name='TRADE'
-Range=[0 1]
+Range=[0 100]
 NumMFs=3
-MF1='closed':'trimf',[-0.4 0 0.4]
-MF2='medium':'trimf',[0.1 0.5 0.9]
-MF3='open':'trimf',[0.6 1 1.4]
+MF1='low':'trimf',[-40 0 30]
+MF2='medium':'trimf',[20 45 70]
+MF3='high':'trimf',[60 100 140]
 
 [Input3]
 Name='INTERNATIONAL-ORG'
 Range=[0 1]
 NumMFs=3
 MF1='Low':'trimf',[-0.4 0 0.4]
-MF2='Medium':'trimf',[0.1 0.5 0.9]
+MF2='Medium':'trimf',[0.2 0.5 0.8]
 MF3='High':'trimf',[0.6 1 1.4]
 
 [Input4]
@@ -40,7 +40,7 @@ Name='INTERNET-HOSTS'
 Range=[0 1]
 NumMFs=3
 MF1='Low':'trimf',[-0.4 0 0.4]
-MF2='Medium':'trimf',[0.1 0.5 0.9]
+MF2='Medium':'trimf',[0.3 0.5 0.7]
 MF3='High':'trimf',[0.6 1 1.4]
 
 [Output1]
