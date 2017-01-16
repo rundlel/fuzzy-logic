@@ -15,34 +15,34 @@ DefuzzMethod='centroid'
 Name='FDI'
 Range=[0 50]
 NumMFs=3
-MF1='Low':'trimf',[-5 0 7]
+MF1='Low':'trapmf',[-4.5 0 5 7]
 MF2='Medium':'trimf',[5 10 15]
-MF3='High':'trimf',[12 30 50]
+MF3='High':'trapmf',[12 15 50 63]
 
 [Input2]
 Name='TRADE'
 Range=[0 100]
 NumMFs=4
-MF1='Very-Low':'trimf',[-30 0 30]
+MF1='Very-Low':'trapmf',[-27 0 20 27]
 MF2='Low':'trimf',[20 37.5 55]
 MF3='Medium':'trimf',[50 65 80]
-MF4='High':'trimf',[75 100 133.3]
+MF4='High':'trapmf',[75 80 100 130]
 
 [Input3]
 Name='INTERNATIONAL-ORG'
 Range=[0 100]
 NumMFs=3
-MF1='Low':'trimf',[-40 0 45]
+MF1='Low':'trapmf',[-36 0 40 45]
 MF2='Medium':'trimf',[40 57.5 75]
-MF3='High':'trimf',[65 100 140]
+MF3='High':'trapmf',[65 75 100 136]
 
 [Input4]
 Name='INTERNET-USERS'
 Range=[0 100]
 NumMFs=3
-MF1='Low':'trimf',[-40 0 45]
+MF1='Low':'trapmf',[-36 0 40 45]
 MF2='Medium':'trimf',[40 55 70]
-MF3='High':'trimf',[65 100 140]
+MF3='High':'trapmf',[65 70 100 136]
 
 [Output1]
 Name='Globalisation-Index'
@@ -71,7 +71,7 @@ MF5='Globalised':'trimf',[75 100 125]
 0 4 1 0, 3 (1) : 1
 0 3 2 0, 4 (1) : 1
 0 3 3 0, 4 (1) : 1
-0 2 2 0, 2 (1) : 1
+0 2 2 0, 3 (1) : 1
 0 2 1 0, 2 (1) : 1
 0 1 1 0, 1 (1) : 1
 0 1 2 0, 1 (1) : 1
